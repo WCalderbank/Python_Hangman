@@ -53,7 +53,7 @@ def play(word):
         print(word_completion)
         print("\n")
     if guessed:
-        print("Congrats, You Guessed The Word! You Win !")
+        print("Congrats, You Guessed The Correct Word! You Win !")
     else:
         print("Sorry You Ran Out Of Tries, The Word Was... " + word)
 
@@ -61,7 +61,7 @@ def play(word):
 def main():
     word = get_word()
     play(word)
-    while input("Play Again? (Y/N) ").upper() == "Y":
+    while input("Wanna Play Again? (Y/N) ").upper() == "Y":
         word = get_word()
         play(word)
 
